@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 )
 
 func main()  {
@@ -16,4 +17,8 @@ func main()  {
 	var firstName string
 
 	fmt.Println(len(firstName))
+
+	cpus := runtime.NumCPU()
+
+	fmt.Println(cpus)
 }
