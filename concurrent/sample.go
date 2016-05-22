@@ -9,16 +9,12 @@ func main()  {
 	fmt.Println("start!")
 
 	urls := []string{
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://localhost:60011/testleaflet.html",
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
+		"https://www.mapbox.com/",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
 	}
 	for _, url := range urls {
 		res, err := http.Get(url)

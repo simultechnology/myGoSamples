@@ -16,19 +16,13 @@ func main()  {
 
 	cpus := runtime.NumCPU()
 	runtime.GOMAXPROCS(cpus)
-
 	urls := []string{
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://localhost:60011/testleaflet.html",
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://192.168.33.99/avs/", "http://localhost:60011/testleaflet.html",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
-		"http://localhost:60011/testleaflet.html", "http://192.168.33.99/avs/",
+		"https://www.mapbox.com/",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
+		"http://52.69.128.185/", "http://google.co.jp",
 	}
+
 	statusChan := make(chan string)
 	for _, url := range urls {
 		go func(url string) {
